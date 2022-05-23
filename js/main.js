@@ -30,8 +30,15 @@ const app = new Vue({
     },
     methods:{
         checkActivity(index){
-            console.log(index)
-            this.todolist[index].isDone = true
+            if(!this.todolist[index].isDone){
+                this.todolist[index].isDone = true;
+                
+            }else{
+                this.todolist[index].isDone = false;
+            }    
+        },
+        cancelActivity(index){
+            this.todolist.splice(index,1);
         }
     }
      

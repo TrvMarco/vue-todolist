@@ -64,8 +64,26 @@ body{
 .cancel-activity, .check-activity{
     font-size: 20px;
     cursor: pointer;
+    transition: 1s;
 }
 
 .cancel-activity{
     margin-left: 5px;
+}
+
+.cancel-activity:hover, .check-activity:hover{
+    transform: scale(1.2);
+
+}
+
+.cancel-activity:hover{
+    color: rgb(216, 0, 0);
+}
+
+.check-activity:hover{
+    color: rgb(121, 202, 0);
+}
+
+.checkactivitychecked{
+    color: rgb(121, 202, 0);
 }
