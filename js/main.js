@@ -56,6 +56,8 @@ const app = new Vue({
             const userChange = prompt(`Modifica attivita: ${this.todolist[index].text}`);
             if(userChange == ""){
                 this.todolist[index].text
+            }else if(userChange == null){
+                this.todolist[index].text
             }else{
                 this.todolist[index].text = userChange;
             }
