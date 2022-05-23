@@ -39,6 +39,11 @@ body{
 /*-----------
     Activity
 ------------*/
+.activity-container{
+    max-height: 575px;
+    overflow-y: auto;
+}
+
 .activity-container ul{
     list-style: none;
     display: flex;

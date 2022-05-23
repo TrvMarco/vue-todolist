@@ -30,9 +30,9 @@
                     </div>
                 </section>
                 <section class="add-activity">
-                    <form>
-                        <input class="input-new-act" type="text" name="" id="" placeholder="Aggiungi una nuova attività">
-                        <button class="btn">Aggiungi attività</button>
+                    <form @submit.prevent="addTask()">
+                        <input class="input-new-act" type="text" name="" id="" placeholder="Aggiungi una nuova attività" v-model="newTodo.text" required minlength="3">
+                        <button class="btn" type="submit">Aggiungi attività</button>
                     </form>
                 </section>
             </div>
