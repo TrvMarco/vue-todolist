@@ -12,7 +12,7 @@ const app = new Vue({
             },
             {
                 text: 'Riunione ore 15.30 ',
-                isDone: false,
+                isDone: true,
             },
             {
                 text: 'Spedire reso pacco Amazon',

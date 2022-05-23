@@ -52,4 +52,20 @@ body{
     background-color: azure;
     width: 70%;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.activitydone{
+    text-decoration: line-through;
+}
+
+.cancel-activity, .check-activity{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cancel-activity{
+    margin-left: 5px;
 }
