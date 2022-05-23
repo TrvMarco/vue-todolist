@@ -25,12 +25,14 @@
                 <section class="activities-container">
                     <div class="activity-container">
                         <ul v-if="todolist.length > 0">
-                            <li :class="{activitydone: activity.isDone}" class="activity" v-for="(activity,index) in todolist">
-                                <span>{{ activity.text }}</span>
+                            <li class="activity" v-for="(activity,index) in todolist">
+                                <span :class="{activitydone: activity.isDone}">{{ activity.text }}</span>
                                 <div>
-                                    <i class="fa-solid fa-pen-to-square edit-activity" @click="editActivity(index)"></i>
-                                    <i class="fa-solid fa-circle-check check-activity" @click="checkActivity(index)" :class="{checkactivitychecked : activity.isDone === true}"></i>
-                                    <i class="fa-solid fa-circle-xmark cancel-activity" @click="cancelActivity(index)"></i>
+                                    <span>
+                                        <i class="fa-solid fa-pen-to-square edit-activity" @click="editActivity(index)"></i>
+                                        <i class="fa-solid fa-circle-check check-activity" @click="checkActivity(index)" :class="{checkactivitychecked : activity.isDone === true}"></i>
+                                        <i class="fa-solid fa-circle-xmark cancel-activity" @click="cancelActivity(index)"></i>
+                                    </span>
                                 </div>
                             </li>
                         </ul>
