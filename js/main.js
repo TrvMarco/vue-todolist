@@ -45,7 +45,7 @@ const app = new Vue({
             this.todolist.splice(index,1);
         },
         addTask(){
-            if(!this.todolist.includes(this.newTodo)){
+            if(true){
                 this.todolist.push(this.newTodo);
                 this.newTodo = {
                     text: '',

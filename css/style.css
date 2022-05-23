@@ -39,6 +39,14 @@ body{
 /*-----------
     Activity
 ------------*/
+.no-task-message{
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
 .activity-container{
     max-height: 575px;
     overflow-y: auto;

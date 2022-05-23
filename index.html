@@ -24,9 +24,10 @@
                 </section>
                 <section class="activities-container">
                     <div class="activity-container">
-                        <ul>
+                        <ul v-if="todolist.length > 0">
                             <li :class="{activitydone: activity.isDone}" class="activity" v-for="(activity,index) in todolist"><span>{{ activity.text }}</span><div><span><i class="fa-solid fa-circle-check check-activity" @click="checkActivity(index)" :class="{checkactivitychecked : activity.isDone === true}"></i></span><span><i class="fa-solid fa-circle-xmark cancel-activity" @click="cancelActivity(index)"></i></span></div></li>
                         </ul>
+                        <h2 v-else class="no-task-message">Attualmente non hai nessuna attività nella lista!</h2>
                     </div>
                 </section>
                 <section class="add-activity">
