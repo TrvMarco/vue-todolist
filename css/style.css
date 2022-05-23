@@ -81,11 +81,17 @@ body{
     transition: 1s;
 }
 
-.cancel-activity{
+.edit-activity{
+    font-size: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.cancel-activity, .check-activity{
     margin-left: 5px;
 }
 
-.cancel-activity:hover, .check-activity:hover{
+.cancel-activity:hover, .check-activity:hover, .edit-activity:hover{
     transform: scale(1.2);
 
 }
@@ -100,6 +106,10 @@ body{
 
 .checkactivitychecked{
     color: rgb(121, 202, 0);
+}
+
+.edit-activity:hover{
+    color: orange;
 }
 
 /*-----------

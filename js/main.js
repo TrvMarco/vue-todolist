@@ -51,6 +51,15 @@ const app = new Vue({
                     text: '',
                     isDone: false}
             }
+        },
+        editActivity(index){
+            const userChange = prompt(`Modifica attivita: ${this.todolist[index].text}`);
+            if(userChange == ""){
+                this.todolist[index].text
+            }else{
+                this.todolist[index].text = userChange;
+            }
+
         }
     }   
      
