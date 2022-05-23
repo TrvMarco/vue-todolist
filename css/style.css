@@ -87,3 +87,34 @@ body{
 .checkactivitychecked{
     color: rgb(121, 202, 0);
 }
+
+/*-----------
+Add Activity
+------------*/
+.add-activity form{
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+
+.add-activity{
+    display: flex;
+    justify-content: center;
+}
+
+.input-new-act{
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: azure;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.btn{
+    padding: 5px 10px;
+    font-family: 'Varela Round', sans-serif; 
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
