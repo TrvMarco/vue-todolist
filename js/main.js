@@ -12,7 +12,7 @@ const app = new Vue({
             },
             {
                 text: 'Riunione ore 15.30 ',
-                isDone: true,
+                isDone: false,
             },
             {
                 text: 'Spedire reso pacco Amazon',
@@ -27,6 +27,12 @@ const app = new Vue({
                 isDone: false,
             }
         ]    
+    },
+    methods:{
+        checkActivity(index){
+            console.log(index)
+            this.todolist[index].isDone = true
+        }
     }
      
     

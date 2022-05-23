@@ -25,7 +25,7 @@
                 <section class="activities-container">
                     <div class="activity-container">
                         <ul>
-                            <li :class="{activitydone: activity.isDone}" class="activity" v-for="(activity,index) in todolist"><span>{{ activity.text }}</span><div><span><i class="fa-solid fa-circle-check check-activity"></i></span><span><i class="fa-solid fa-circle-xmark cancel-activity"></i></span></div></li>
+                            <li :class="{activitydone: activity.isDone}" class="activity" v-for="(activity,index) in todolist"><span>{{ activity.text }}</span><div><span><i class="fa-solid fa-circle-check check-activity" @click="checkActivity(index)"></i></span><span><i class="fa-solid fa-circle-xmark cancel-activity"></i></span></div></li>
                         </ul>
                     </div>
                 </section>
